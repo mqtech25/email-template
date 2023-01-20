@@ -1,0 +1,9 @@
+print('WELCOME TO EMAIL CRAWLER')
+try:
+    websites = sys.argv[4]
+except:
+    # website = input("Please enter a website to crawl for emails:")
+    websites=["https://mqtech25.github.io/portfolio","https://oliviaward.ampbk.com/","https://jasonkalinowski.ampbk.com/","https://ariamimarpisa.ampbk.com/"]
+    for web in websites:
+        crawl = EmailCrawler(web)
+        crawl.crawl()
